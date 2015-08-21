@@ -1,0 +1,96 @@
+@font-face {
+  font-family: ComicBook;
+  src: url("../fonts/ComicBook.otf") format("opentype");
+}
+
+$darkblue: #140056;
+$blue: #141471;
+$orange: #EC6138;
+
+html, body {
+  font-family: ComicBook;
+  background-color: $darkblue;
+  text-align: center;
+  color: white;
+}
+
+body {
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: ComicBook;
+  color: $orange;
+}
+
+header {
+  padding: 5em 0;
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  .links {
+    padding-top: 3em;
+
+    a {
+      padding: 0 2em;
+    }
+  }
+
+}
+
+section {
+  padding: 5em 0;
+  text-align: left;
+
+  h1 {
+    font-size: 2em;
+    padding-top: 1em;
+  }
+
+  ul {
+    font-size: 1.3em;
+    padding-top: 1em;
+    line-height: 3em;
+  }
+
+  &.centered {
+    text-align: center;
+    padding-top: 0;
+
+    h2 {
+      font-size: 1.4em;
+    }
+
+    img {
+      padding-top: 2em;
+    }
+  }
+}
+
+footer {
+  color: rgba(200, 250, 255, 0.3);
+  height: 50px;
+}
+
+.skyline {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -80px;
+  opacity: 0.3;
+}
+
+.button {
+
+  margin-top: 2em;
+  background-color: #BA0404;
+
+  &:hover {
+    background-color: #BA0404;
+  }
+
+  &:visited {
+    background-color: #BA0404;
+  }
+}
